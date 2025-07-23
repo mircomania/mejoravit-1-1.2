@@ -1,9 +1,9 @@
+import { SectionLp1 } from '../imports/SectionLp1';
+
 const LandingPage = () => {
     return (
-        <main>
-            <section>
-                <h1>hola</h1>
-            </section>
+        <main className="fade-in">
+            <SectionLp1 />
         </main>
     );
 };

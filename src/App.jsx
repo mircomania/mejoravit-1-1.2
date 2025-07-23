@@ -4,37 +4,30 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/common/NavBar';
 import { Cargando } from './components/utils/Cargando';
 import { ScrollToTop } from './hooks/ScrollTop';
+import { Footer } from './components/common/Footer';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
 
-const routes = [{ path: '/', id: 1, element: <LandingPage /> }];
-
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/mejoravit-1-1.2/">
             <ScrollToTop />
 
             <NavBar />
 
-            <Routes>
-                {routes.map(({ path, element, id }) => (
-                    <Route
-                        key={id}
-                        path={path}
-                        element={
-                            <Suspense
-                                fallback={
-                                    <div className="cargando">
-                                        <Cargando />
-                                    </div>
-                                }
-                            >
-                                {element}
-                            </Suspense>
-                        }
-                    />
-                ))}
-            </Routes>
+            <Suspense
+                fallback={
+                    <main className="cargando">
+                        <Cargando />
+                    </main>
+                }
+            >
+                <Routes>
+                    <Route path="/" element={<LandingPage />}></Route>
+                </Routes>
+            </Suspense>
+
+            <Footer />
         </BrowserRouter>
     );
 }
