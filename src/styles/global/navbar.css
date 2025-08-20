@@ -114,7 +114,6 @@
 
 .menu-nav li a.active,
 .burger-menu-nav li a.active {
-    font-weight: bold;
     color: var(--primary-color);
 }
 

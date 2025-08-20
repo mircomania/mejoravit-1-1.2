@@ -67,6 +67,7 @@
     border-radius: 10px;
     height: 2px;
     opacity: 0.5;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 576px) {
@@ -113,6 +114,10 @@
         width: 70px;
         height: 70px;
     }
+
+    .sectionContainer hr {
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -142,6 +147,10 @@
 
     .pasoTexto p {
         font-size: 22px;
+    }
+
+    .sectionContainer hr {
+        margin-bottom: 80px;
     }
 }
 

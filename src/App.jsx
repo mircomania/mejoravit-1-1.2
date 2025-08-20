@@ -7,6 +7,7 @@ import { ScrollToTop } from './hooks/ScrollTop';
 import { Footer } from './components/common/Footer';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
+const FormPage = lazy(() => import('./components/pages/FormPage'));
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
             >
                 <Routes>
                     <Route path="/" element={<LandingPage />}></Route>
+                    <Route path="/precalificar" element={<FormPage />}></Route>
                 </Routes>
             </Suspense>
 
