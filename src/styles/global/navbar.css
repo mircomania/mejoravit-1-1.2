@@ -45,7 +45,7 @@
     right: 0;
     width: 260px;
     height: 100%;
-    background: var(--background-color-2);
+    background: var(--background-color);
     padding-top: 80px;
     box-shadow: -4px 0 10px var(--shadow-color);
     border-top-left-radius: 20px;
@@ -76,8 +76,7 @@
 .container-bajo-mobile {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 38%;
 }
 
 .logo-mobile-menu {
@@ -88,7 +87,7 @@
 
 .logo-mobile-menu img {
     height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     user-select: none;
     pointer-events: none;
 }

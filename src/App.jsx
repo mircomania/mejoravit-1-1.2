@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { NavBar } from './components/common/NavBar';
+import { Navbar } from './components/common/Navbar';
 import { Cargando } from './components/utils/Cargando';
 import { ScrollToTop } from './hooks/ScrollTop';
 import { Footer } from './components/common/Footer';
@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter basename="/mejoravit-1-1.2/">
             <ScrollToTop />
 
-            <NavBar />
+            <Navbar />
 
             <Suspense
                 fallback={

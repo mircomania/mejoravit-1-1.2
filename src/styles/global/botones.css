@@ -11,9 +11,10 @@
     cursor: pointer;
     border-style: solid;
     border: none;
+    transition: transform 0.2s ease, color 0.2s ease;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--text-color);
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 0px 90px var(--text-color-2));
     border-radius: 20px;
     padding: 10px 40px;
     font-size: 16px;
@@ -23,13 +24,10 @@
     border-left-width: 3px;
 }
 
-.boton-1:hover {
-    border-color: var(--text-color);
-    color: var(--text-color);
-}
-
+.boton-1:hover,
 .boton-1:active {
-    transform: scale(0.9);
+    filter: drop-shadow(0px 0px 10px var(--text-color));
+    transform: scale(0.95);
 }
 
 @media (min-width: 992px) {

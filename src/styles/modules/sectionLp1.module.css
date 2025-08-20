@@ -64,17 +64,21 @@
     user-select: none;
     color: var(--text-color);
     margin: 20px 0;
+    margin-bottom: 40px;
 }
 
 .sectionContenido2 h1 {
+    z-index: 1;
     font-size: 28px;
 }
 
 .sectionContenido2 h2 {
+    z-index: 1;
     font-size: 20px;
 }
 
 .sectionContenido2 img {
+    z-index: 1;
     pointer-events: none;
     animation: pulsate 1s infinite ease-in-out;
     width: 20px;
@@ -83,7 +87,9 @@
 }
 
 .sectionContenido2 p {
+    z-index: 1;
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .sectionContainer hr {
@@ -99,6 +105,7 @@
     .sectionContenido {
         flex-direction: row-reverse;
         margin: 20px 0;
+        margin-bottom: 40px;
         gap: 10px;
     }
 
@@ -126,7 +133,7 @@
     }
 
     .sectionContenido2 p {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -136,8 +143,8 @@
     }
 
     .sectionContenido {
-        gap: 50px;
         margin-bottom: 50px;
+        gap: 50px;
     }
 
     .sectionContenido1 {
@@ -158,7 +165,7 @@
     }
 
     .sectionContenido2 p {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
@@ -185,7 +192,7 @@
     }
 
     .sectionContenido2 p {
-        font-size: 26px;
+        font-size: 28px;
     }
 }
 
@@ -216,6 +223,6 @@
     }
 
     .sectionContenido2 p {
-        font-size: 28px;
+        font-size: 32px;
     }
 }

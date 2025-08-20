@@ -1,0 +1,166 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 30px;
+}
+
+.paso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    gap: 10px;
+    width: 262px;
+}
+
+.pasoNumero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, color 0.2s ease;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    filter: drop-shadow(0px 0px 90px var(--text-color-2));
+    color: var(--text-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+}
+
+.pasoNumero:hover,
+.pasoNumero:active {
+    filter: drop-shadow(0px 0px 10px var(--text-color));
+    transform: scale(0.95);
+}
+
+.pasoTexto {
+    z-index: 1;
+}
+
+.pasoTexto h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.pasoTexto p {
+    color: var(--text-color-2);
+    font-size: 18px;
+}
+
+.sectionContainer hr {
+    background-color: var(--text-color);
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    opacity: 0.5;
+}
+
+@media (min-width: 576px) {
+    .sectionContenido {
+        gap: 20px;
+    }
+
+    .paso {
+        justify-content: start;
+        width: 425px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .paso {
+        width: 617px;
+        gap: 10px;
+    }
+
+    .pasoNumero {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pasoTexto h3 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionContenido {
+        flex-direction: row;
+        margin: 50px 0;
+    }
+
+    .paso {
+        flex-direction: column;
+        text-align: center;
+        width: 271px;
+    }
+
+    .pasoNumero {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContenido {
+        gap: 80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContenido {
+        margin: 80px 0;
+    }
+
+    .paso {
+        width: 331px;
+    }
+
+    .pasoNumero {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .pasoTexto h3 {
+        font-size: 30px;
+    }
+
+    .pasoTexto p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .paso {
+        width: 391px;
+    }
+
+    .pasoNumero {
+        width: 100px;
+        height: 100px;
+        font-size: 38px;
+    }
+
+    .pasoTexto h3 {
+        font-size: 36px;
+    }
+
+    .pasoTexto p {
+        font-size: 26px;
+    }
+}

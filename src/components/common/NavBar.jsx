@@ -1,12 +1,12 @@
 import LogoNavbar from '../../assets/images/logo-navbar.webp';
 
-import { navLinks } from '../utils/NavBarMenu';
+import { navLinks } from '../utils/navbarMenu';
 
 import { BurgerMenu } from './BurgerMenu';
 
 import { NavLink } from 'react-router-dom';
 
-export const NavBar = () => {
+export const Navbar = () => {
     return (
         <header>
             <nav className="navbar" aria-label="Menú de navegación principal">
