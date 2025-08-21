@@ -6,7 +6,7 @@ import { BotonNav } from '../utils/BotonNav';
 
 const ErrorPage = () => {
     return (
-        <main>
+        <main className="fade-in">
             <TitleSEO title="Mejoravit | Error" description="Lo sentimos, la página que buscas no existe." metaNoIndex={true} />
 
             <section className={styles.sectionContainer}>
