@@ -1,0 +1,143 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.sectionTitulo {
+    user-select: none;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionTitulo img {
+    user-select: none;
+    pointer-events: none;
+    width: 290px;
+}
+
+.sectionTitulo h1 {
+    font-size: 28px;
+}
+
+.sectionTitulo h2 {
+    font-size: 20px;
+}
+
+.sectionContenido {
+    z-index: 1;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.sectionContenido p {
+    color: var(--text-color-2);
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.sectionContenido a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo {
+        margin-bottom: 0;
+    }
+
+    .sectionContenido {
+        width: 500px;
+    }
+
+    .sectionContenido p {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionTitulo {
+        margin-bottom: 10px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 32px;
+    }
+
+    .sectionContenido {
+        width: 660px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionContainer {
+        padding-bottom: 50px;
+    }
+
+    .sectionTitulo img {
+        width: 450px;
+    }
+
+    .sectionContenido {
+        margin-bottom: 50px;
+        width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionTitulo h1 {
+        font-size: 42px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 26px;
+    }
+
+    .sectionContenido {
+        width: 900px;
+    }
+
+    .sectionContenido p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding-bottom: 80px;
+    }
+
+    .sectionTitulo img {
+        width: 600px;
+    }
+
+    .sectionContenido {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionTitulo img {
+        width: 750px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 52px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 32px;
+    }
+
+    .sectionContenido {
+        width: 1200px;
+    }
+
+    .sectionContenido p {
+        font-size: 20px;
+    }
+}

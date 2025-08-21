@@ -1,4 +1,5 @@
 .form {
+    z-index: 1;
     position: relative;
     color: var(--text-color);
     border: 3px solid var(--text-color);
@@ -26,10 +27,12 @@
 }
 
 .campoPrecalificarForm label {
+    z-index: 1;
     user-select: none;
 }
 
 .formControl {
+    z-index: 1;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

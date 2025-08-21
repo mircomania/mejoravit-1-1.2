@@ -1,0 +1,41 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100dvh - 237px);
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.sectionTitulo {
+    z-index: 1;
+    color: var(--text-color);
+    user-select: none;
+    text-align: center;
+    width: 350px;
+}
+
+.sectionTitulo h1 {
+    font-size: 32px;
+}
+
+.sectionTitulo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sectionTitulo p {
+    color: var(--text-color-2);
+    margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo {
+        width: 440px;
+    }
+
+    .sectionTitulo p {
+        font-size: 20px;
+    }
+}

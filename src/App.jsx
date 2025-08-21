@@ -8,6 +8,9 @@ import { Footer } from './components/common/Footer';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
 const FormPage = lazy(() => import('./components/pages/FormPage'));
+const FaqPage = lazy(() => import('./components/pages/FaqPage'));
+const PoliticasPage = lazy(() => import('./components/pages/PoliticasPage'));
+const ErrorPage = lazy(() => import('./components/pages/ErrorPage'));
 
 function App() {
     return (
@@ -26,6 +29,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<LandingPage />}></Route>
                     <Route path="/precalificar" element={<FormPage />}></Route>
+                    <Route path="/faq" element={<FaqPage />}></Route>
+                    <Route path="/politica-privacidad" element={<PoliticasPage />}></Route>
+                    <Route path="*" element={<ErrorPage />}></Route>
                 </Routes>
             </Suspense>
 

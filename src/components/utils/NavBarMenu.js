@@ -16,7 +16,7 @@ export const navLinks = [
     },
     {
         id: 'faq',
-        to: '/preguntas-frecuentes',
+        to: '/faq',
         label: 'FAQ',
         title: 'Ver las preguntas frecuentes',
         dataLink: 'navbar-faq-link',
