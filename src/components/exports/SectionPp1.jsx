@@ -100,6 +100,8 @@ export const SectionPp1 = () => {
             <BotonNav to="/" ariaLabel="Ir a la página de inicio" title="Haz clic para ir a la página de inicio" dataLink="polilicas-home-btn">
                 IR AL INICIO
             </BotonNav>
+
+            <hr />
         </section>
     );
 };

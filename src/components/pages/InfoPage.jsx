@@ -1,6 +1,7 @@
 import { TitleSEO } from '../utils/TitleSEO';
 
 import { SectionIp1 } from '../exports/SectionIp1';
+import { Pasos } from '../exports/Pasos';
 
 const InfoPage = () => {
     return (
@@ -12,6 +13,8 @@ const InfoPage = () => {
             />
 
             <SectionIp1 />
+
+            <Pasos />
         </main>
     );
 };

@@ -8,6 +8,7 @@ import { getFaqStructuredData } from '../utils/getFaqStructuredData';
 import { faqData } from '../utils/faqData';
 
 import { BotonNav } from '../utils/BotonNav';
+import { Pasos } from '../exports/Pasos';
 
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -80,7 +81,11 @@ const FaqPage = () => {
                 </div>
 
                 <BotonNav dataCta="faq-btn" />
+
+                <hr />
             </section>
+
+            <Pasos />
         </main>
     );
 };

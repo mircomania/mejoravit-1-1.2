@@ -1,6 +1,7 @@
 import { TitleSEO } from '../utils/TitleSEO';
 
 import { SectionPp1 } from '../exports/SectionPp1';
+import { Pasos } from '../exports/Pasos';
 
 const PoliticasPage = () => {
     return (
@@ -12,6 +13,8 @@ const PoliticasPage = () => {
             />
 
             <SectionPp1 />
+
+            <Pasos />
         </main>
     );
 };

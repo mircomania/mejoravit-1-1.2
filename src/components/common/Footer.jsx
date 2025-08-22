@@ -19,11 +19,11 @@ export const Footer = () => {
                 <p>© Mejoravit 2025</p>
 
                 <div className="links-footer">
-                    <NavLink to="/politica-privacidad" title="Ver la política de privacidad" data-link="footer-politica-link">
+                    <NavLink to="/politica-privacidad" title="Ver la política de privacidad del crédito Mejoravit" data-link="footer-politica-link">
                         Política de privacidad
                     </NavLink>
 
-                    <NavLink to="/faq" title="Ver las preguntas preguntas frecuentes" data-link="footer-faq-link">
+                    <NavLink to="/faq" title="Ver las preguntas preguntas frecuentes del crédito Mejoravit" data-link="footer-faq-link">
                         FAQ
                     </NavLink>
                 </div>
