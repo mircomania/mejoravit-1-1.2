@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/common/Navbar';
 import { Cargando } from './components/utils/Cargando';
 import { ScrollToTop } from './hooks/ScrollTop';
+import { WhatsAppIcon } from './components/utils/WhatsAppIcon';
 import { Footer } from './components/common/Footer';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
@@ -19,6 +20,8 @@ function App() {
             <ScrollToTop />
 
             <Navbar />
+
+            <WhatsAppIcon />
 
             <Suspense
                 fallback={

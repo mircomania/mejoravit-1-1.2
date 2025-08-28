@@ -70,17 +70,14 @@
     }
 
     .sectionTitulo h1 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .sectionTitulo h2 {
         font-size: 18px;
     }
 
-    .sectionForm {
-        width: 400px;
-    }
-
+    .sectionForm,
     .sectionFooter {
         width: 400px;
     }
@@ -100,10 +97,6 @@
         width: 370px;
     }
 
-    .sectionTitulo h1 {
-        font-size: 32px;
-    }
-
     .sectionForm {
         width: 280px;
         margin: 0;
@@ -121,7 +114,6 @@
 
     .sectionContenido {
         margin-bottom: 50px;
-        gap: 20px;
     }
 
     .sectionForm {

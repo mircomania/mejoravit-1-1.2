@@ -82,27 +82,20 @@
     margin-bottom: 10px;
 }
 
-.sectionTexto2 ul {
-    margin-left: 20px;
-}
-
-.sectionTexto2 li {
-    margin-top: 10px;
-}
-
-.sectionTexto2 ul li::marker {
-    color: var(--text-color);
-}
-
+.sectionTexto2 ul,
 .sectionTexto3 ul {
     margin-left: 20px;
 }
 
-.sectionTexto3 li {
+.sectionTexto2 li,
+.sectionTexto3 li,
+.sectionTexto4 li {
     margin-top: 10px;
 }
 
-.sectionTexto3 ul li::marker {
+.sectionTexto2 ul li::marker,
+.sectionTexto3 ul li::marker,
+.sectionTexto5 p {
     color: var(--text-color);
 }
 
@@ -140,17 +133,9 @@
     margin-left: 20px;
 }
 
-.sectionTexto4 li {
-    margin-top: 10px;
-}
-
 .sectionTexto4 ul li::marker {
     color: var(--text-color);
     font-weight: bold;
-}
-
-.sectionTexto5 p {
-    color: var(--text-color);
 }
 
 .sectionTexto5 a {
@@ -178,10 +163,6 @@
 }
 
 @media (min-width: 768px) {
-    .sectionTitulo h1 {
-        font-size: 28px;
-    }
-
     .sectionTitulo h2 {
         font-size: 22px;
     }
@@ -237,7 +218,9 @@
         margin-bottom: 40px;
     }
 
-    .textoImgSection1 {
+    .textoImgSection1,
+    .sectionTexto2 h3,
+    .sectionTexto4 h3 {
         margin-bottom: 20px;
     }
 
@@ -246,15 +229,9 @@
         gap: 30px;
     }
 
-    .sectionTexto2 h3 {
-        margin-bottom: 20px;
-    }
-
-    .sectionTexto2 li {
-        margin-top: 15px;
-    }
-
-    .sectionTexto3 li {
+    .sectionTexto2 li,
+    .sectionTexto3 li,
+    .sectionTexto4 li {
         margin-top: 15px;
     }
 
@@ -276,14 +253,6 @@
 
     .sectionTexto4 {
         margin-bottom: 50px;
-    }
-
-    .sectionTexto4 h3 {
-        margin-bottom: 20px;
-    }
-
-    .sectionTexto4 li {
-        margin-top: 15px;
     }
 }
 
