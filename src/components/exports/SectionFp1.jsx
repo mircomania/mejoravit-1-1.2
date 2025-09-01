@@ -6,10 +6,14 @@ import logoHome from '../../assets/images/logo-mejoravit-home.webp';
 
 import { Form } from './Form';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 export const SectionFp1 = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <section className={styles.sectionContainer}>
-            <img src={logoHome} alt="Logotipo de Mejoravit" className={styles.logo} />
+            <img src={logoHome} alt="Logotipo de Mejoravit" className={`${styles.logo} animacion-up`} ref={objRef} />
 
             <div className={styles.sectionContenido}>
                 <header className={styles.sectionTitulo}>

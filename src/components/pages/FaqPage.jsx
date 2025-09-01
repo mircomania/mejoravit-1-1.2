@@ -10,6 +10,8 @@ import { faqData } from '../utils/faqData';
 import { BotonNav } from '../utils/BotonNav';
 import { Pasos } from '../exports/Pasos';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 import { HelmetProvider } from 'react-helmet-async';
 
 const faqStructuredData = getFaqStructuredData(faqData);
@@ -45,6 +47,8 @@ const replaceWithJSX = (text, faqId) => {
 };
 
 const FaqPage = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <main className="fade-in">
             <TitleSEO
@@ -59,7 +63,7 @@ const FaqPage = () => {
 
             <section className={styles.sectionContainer}>
                 <header className={styles.sectionTitulo}>
-                    <img src={logoHome} alt="Logotipo de Mejoravit" />
+                    <img src={logoHome} alt="Logotipo de Mejoravit" className="animacion-up" ref={objRef} />
 
                     <h1 className="bold-text">PREGUNTAS FRECUENTES</h1>
 

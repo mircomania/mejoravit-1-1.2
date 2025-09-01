@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 
 import { BotonNav } from '../utils/BotonNav';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 const MEJORAVIT_LINK = (
     <NavLink to="/" title="ir a mejoravit.com.mx" data-link="politicas-home-link">
         mejoravit
@@ -13,10 +15,12 @@ const MEJORAVIT_LINK = (
 );
 
 export const SectionPp1 = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
-                <img src={logoHome} alt="Logotipo de Mejoravit" />
+                <img src={logoHome} alt="Logotipo de Mejoravit" className="animacion-up" ref={objRef} />
 
                 <h1 className="bold-text">Política de privacidad</h1>
 

@@ -7,7 +7,12 @@ export const WhatsAppIcon = () => {
     };
 
     return (
-        <button onClick={handleClick} className="whatsapp-button" aria-label="Haz click para chatear con un agente por WhatsApp">
+        <button
+            onClick={handleClick}
+            className="whatsapp-button"
+            aria-label="Haz click para chatear con un agente por WhatsApp"
+            data-link="whatsapp-btn"
+        >
             <span className="whatsapp-text bold-text">WhatsApp</span>
         </button>
     );

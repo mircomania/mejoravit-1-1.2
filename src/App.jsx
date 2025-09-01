@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Navbar } from './components/common/Navbar';
@@ -15,6 +15,16 @@ const PoliticasPage = lazy(() => import('./components/pages/PoliticasPage'));
 const ErrorPage = lazy(() => import('./components/pages/ErrorPage'));
 
 function App() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <BrowserRouter basename="/mejoravit-1-1.2/">
             <ScrollToTop />
@@ -23,22 +33,28 @@ function App() {
 
             <WhatsAppIcon />
 
-            <Suspense
-                fallback={
-                    <main className="cargando">
-                        <Cargando />
-                    </main>
-                }
-            >
-                <Routes>
-                    <Route path="/" element={<LandingPage />}></Route>
-                    <Route path="/precalificar" element={<FormPage />}></Route>
-                    <Route path="/informacion-credito" element={<InfoPage />}></Route>
-                    <Route path="/faq" element={<FaqPage />}></Route>
-                    <Route path="/politica-privacidad" element={<PoliticasPage />}></Route>
-                    <Route path="*" element={<ErrorPage />}></Route>
-                </Routes>
-            </Suspense>
+            {loading ? (
+                <main className="cargando">
+                    <Cargando />
+                </main>
+            ) : (
+                <Suspense
+                    fallback={
+                        <main className="cargando">
+                            <Cargando />
+                        </main>
+                    }
+                >
+                    <Routes>
+                        <Route path="/" element={<LandingPage />}></Route>
+                        <Route path="/precalificar" element={<FormPage />}></Route>
+                        <Route path="/informacion-credito" element={<InfoPage />}></Route>
+                        <Route path="/faq" element={<FaqPage />}></Route>
+                        <Route path="/politica-privacidad" element={<PoliticasPage />}></Route>
+                        <Route path="*" element={<ErrorPage />}></Route>
+                    </Routes>
+                </Suspense>
+            )}
 
             <Footer />
         </BrowserRouter>

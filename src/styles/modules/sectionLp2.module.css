@@ -17,6 +17,7 @@
 }
 
 .sectionContenido h2 {
+    user-select: none;
     text-align: center;
     font-size: 16px;
 }

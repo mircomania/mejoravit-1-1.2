@@ -6,13 +6,17 @@ import img2 from '../../assets/images/img-info-2.webp';
 
 import { BotonNav } from '../utils/BotonNav';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 import { NavLink } from 'react-router-dom';
 
 export const SectionIp1 = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
-                <img src={logoHome} alt="Logotipo de Mejoravit" />
+                <img src={logoHome} alt="Logotipo de Mejoravit" className="animacion-up" ref={objRef} />
 
                 <h1 className="bold-text">Crédito Mejoravit 2025</h1>
 
@@ -81,6 +85,8 @@ export const SectionIp1 = () => {
 
                         <div className={styles.img1}>
                             <img
+                                ref={objRef}
+                                className="animacion-izq"
                                 src={img1}
                                 alt="Imagen representativa de productos ingresando a una casa, simbolizando el uso de un Crédito Mejoravit."
                                 loading="lazy"
@@ -106,6 +112,8 @@ export const SectionIp1 = () => {
 
                         <div className={styles.img2}>
                             <img
+                                ref={objRef}
+                                className="animacion-der"
                                 src={img2}
                                 alt="Tabla de Checklist, anotando los requisitos necesarios para postular al Crédito Mejoravit"
                                 loading="lazy"

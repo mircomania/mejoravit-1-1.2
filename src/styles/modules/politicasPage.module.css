@@ -28,6 +28,7 @@
 }
 
 .sectionContenido {
+    user-select: none;
     z-index: 1;
     width: 300px;
     margin-bottom: 40px;

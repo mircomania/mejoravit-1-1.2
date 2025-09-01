@@ -7,9 +7,13 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import { estados } from '../utils/estadosMexicos';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 import ImgForm from '../../assets/images/img-form.webp';
 
 export const Form = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     const { formData, errors, loading, handleChange, handleSubmit, showAlert } = useForm(
         {
             nombre: '',
@@ -122,8 +126,9 @@ export const Form = () => {
             )}
 
             <img
+                ref={objRef}
                 src={ImgForm}
-                className={styles.imgForm}
+                className={`${styles.imgForm} animacion-izq`}
                 alt="Escalera con tarros de pintura, preparandose para renovar tu casa con el Crédito Mejoravit"
                 loading="lazy"
                 decoding="async"

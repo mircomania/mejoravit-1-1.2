@@ -1,17 +1,22 @@
 import styles from '../../styles/modules/pasos.module.css';
 
-import { NavLink } from 'react-router-dom';
-
 import { PasosLista } from '../utils/pasosLista';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
+import { NavLink } from 'react-router-dom';
+
 export const Pasos = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <section className={styles.sectionContainer}>
             <div className={styles.sectionContenido}>
                 {PasosLista.map((paso) => (
-                    <div key={paso.id} className={`${styles.paso} ${'bold-text'}`}>
+                    <div key={paso.id} className={`${styles.paso} bold-text`}>
                         <NavLink
-                            className={styles.pasoNumero}
+                            ref={objRef}
+                            className={`${styles.pasoNumero} animacion-up`}
                             to={paso.to}
                             aria-label={`Ir al paso ${paso.id}: ${paso.titulo}`}
                             {...(paso.dataCTA && { 'data-cta': paso.dataCTA })}
@@ -20,7 +25,7 @@ export const Pasos = () => {
                             {paso.id}
                         </NavLink>
 
-                        <div className={styles.pasoTexto}>
+                        <div className={`${styles.pasoTexto} animacion-down`} ref={objRef}>
                             <h3 className="bold-text">{paso.titulo}</h3>
 
                             <p className="light-text">{paso.texto}</p>
