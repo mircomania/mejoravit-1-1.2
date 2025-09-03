@@ -11,7 +11,6 @@
 .camposObligatorios {
     text-align: end;
     margin-bottom: 20px;
-    user-select: none;
 }
 
 .campoPrecalificarForm {
@@ -28,7 +27,6 @@
 
 .campoPrecalificarForm label {
     z-index: 1;
-    user-select: none;
 }
 
 .formControl {

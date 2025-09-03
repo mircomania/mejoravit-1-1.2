@@ -6,7 +6,6 @@
 }
 
 .sectionTitulo {
-    user-select: none;
     text-align: center;
     color: var(--text-color);
     margin-top: 10px;
@@ -28,7 +27,6 @@
 }
 
 .sectionContenido {
-    user-select: none;
     z-index: 1;
     width: 320px;
     margin-bottom: 20px;

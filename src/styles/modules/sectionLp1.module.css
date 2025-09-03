@@ -95,7 +95,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    user-select: none;
     color: var(--text-color);
     margin: 20px 0;
     margin-bottom: 40px;

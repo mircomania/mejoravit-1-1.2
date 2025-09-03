@@ -22,7 +22,7 @@ export const faqData = [
     {
         id: 5,
         question: '¿Cómo se paga el crédito Mejoravit?',
-        answer: 'El pago del préstamo Mejoravit se realiza directamente vía nómina, es decir, se descuenta automáticamente de tu salario mensual, sin que tengas que preocuparte por hacer depósitos manuales.',
+        answer: 'El pago del préstamo Mejoravit se realiza en un periodo mínimo de 12 a máximo 48 meses directamente vía nómina, es decir, se descuenta automáticamente de tu salario mensual, sin que tengas que preocuparte por hacer depósitos manuales.',
     },
     {
         id: 6,

@@ -39,25 +39,25 @@ export const SectionIp1 = () => {
 
                     <ul className="light-text">
                         <li>
-                            <strong>Plazos cómodos:</strong> de 12 a 48 meses.
+                            <strong>Plazos cómodos:</strong> Cubre el pago desde 12 a 48 meses.
                         </li>
 
                         <li>
-                            <strong>Tasa de interés competitiva:</strong> aproximadamente 11% anual (más baja que muchos préstamos personales
+                            <strong>Tasa de interés competitiva:</strong> Aproximadamente 11% anual (más baja que muchos préstamos personales
                             similares; confirma la tasa vigente al momento de solicitar).
                         </li>
 
                         <li>
-                            <strong>Descuento vía nómina:</strong> los pagos se descuentan automáticamente; las aportaciones patronales van directo al
+                            <strong>Descuento vía nómina:</strong> Los pagos se descuentan automáticamente; las aportaciones patronales van directo al
                             abono del crédito, lo que puede reducir el plazo.
                         </li>
 
                         <li>
-                            <strong>Sin penalización por pago anticipado:</strong> puedes liquidarlo antes sin cargos.
+                            <strong>Sin penalización por pago anticipado:</strong> Puedes liquidarlo antes sin cargos.
                         </li>
 
                         <li>
-                            <strong>Puedes solicitarlo de nuevo:</strong> si ya lo pagaste, puedes pedir un nuevo Mejoravit pasado 2 meses desde la
+                            <strong>Puedes solicitarlo de nuevo:</strong> Si ya lo pagaste, puedes pedir un nuevo Mejoravit pasado 2 meses desde la
                             liquidación.
                         </li>
                     </ul>

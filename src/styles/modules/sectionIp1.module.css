@@ -25,7 +25,6 @@
 }
 
 .sectionTitulo {
-    user-select: none;
     text-align: center;
     color: var(--text-color);
     margin-top: 10px;
@@ -47,7 +46,6 @@
 }
 
 .sectionContenido {
-    user-select: none;
     display: flex;
     flex-direction: column;
     align-items: center;

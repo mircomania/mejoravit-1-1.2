@@ -70,7 +70,6 @@
     padding-right: 25px;
     font-size: 22px;
     cursor: pointer;
-    user-select: none;
 }
 
 .container-bajo-mobile {
@@ -150,7 +149,6 @@
         justify-content: center;
         gap: 30px;
         font-size: 22px;
-        user-select: none;
         margin-right: 40px;
         margin-top: 20px;
     }

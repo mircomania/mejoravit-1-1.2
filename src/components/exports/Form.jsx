@@ -114,8 +114,9 @@ export const Form = () => {
 
             {/* BOTON ENVIAR */}
             <div className={styles.contentEnvio}>
-                <button type="submit" className="boton-1 bold-text" title="Haz clic para enviarnos tus datos" disabled={loading}>
-                    {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : 'ENVIAR'}
+                <button type="submit" className="boton-1 bold-text" disabled={loading}>
+                    <span style={{ visibility: loading ? 'hidden' : 'visible' }}>ENVIAR</span>
+                    {loading && <FontAwesomeIcon icon={faSpinner} spin style={{ position: 'absolute' }} />}
                 </button>
             </div>
 

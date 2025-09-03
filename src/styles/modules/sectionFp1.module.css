@@ -20,7 +20,6 @@
 }
 
 .sectionTitulo {
-    user-select: none;
     text-align: center;
     width: 321px;
 }
@@ -41,7 +40,6 @@
 }
 
 .sectionFooter {
-    user-select: none;
     width: 310px;
     margin-bottom: 40px;
 }
